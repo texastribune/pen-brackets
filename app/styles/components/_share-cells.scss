@@ -1,0 +1,30 @@
+.share-cells {
+  @include clearfix;
+  border-top: $border-width solid $color-gray;
+  margin-bottom: $gutter;
+}
+
+.share-cells__cell {
+  border-bottom: $border-width solid $color-gray;
+  border-left: $border-width solid $color-gray;
+  float: left;
+  text-align: center;
+  width: 33.33%;
+
+  &:first-child {
+    border-left-width: 0;
+  }
+}
+
+.share-cells__icon {
+  height: 14px;
+  vertical-align: bottom;
+}
+
+.share-cells__link {
+  @include font-size(12);
+  color: $color-text-accent;
+  display: block;
+  padding-bottom: $gutter-half;
+  padding-top: $gutter-half;
+}

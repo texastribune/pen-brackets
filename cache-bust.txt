@@ -1,0 +1,5 @@
+http://apps.texastribune.org/2016-texas-primaries/
+http://apps.texastribune.org/2016-texas-primaries/styles/main.css
+http://apps.texastribune.org/2016-texas-primaries/styles/main.css.map
+http://apps.texastribune.org/2016-texas-primaries/scripts/main.js
+http://apps.texastribune.org/2016-texas-primaries/scripts/common.js

@@ -1,0 +1,28 @@
+.story-grid {
+  @include create-column(12);
+
+  @include mq($from: race-break) {
+    @include create-column-offset(1);
+    @include create-column(4);
+  }
+}
+
+.story-grid__header {
+  @include font-size(14);
+  color: $color-text;
+  display: block;
+  font-weight: 700;
+  letter-spacing: 0.03em;
+  margin-bottom: $gutter-half;
+  text-transform: uppercase;
+
+  &:focus,
+  &:hover {
+    text-decoration: underline;
+  }
+}
+
+.story-grid__link {
+  color: $color-link;
+  line-height: 1.2;
+}

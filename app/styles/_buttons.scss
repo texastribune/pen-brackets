@@ -1,0 +1,42 @@
+.btn {
+  @include font-size(16);
+  border: $border-width-double solid transparent;
+  cursor: pointer;
+  display: inline-block;
+  line-height: 1.5;
+  margin-bottom: $gutter-half;
+  padding: $btn-gutter-x $btn-gutter-y;
+  text-align: center;
+  user-select: none;
+  vertical-align: middle;
+  white-space: nowrap;
+}
+
+.btn--primary {
+  background-color: $color-link;
+  border-color: $color-link;
+  color: $color-text-inverse;
+
+  &:focus,
+  &:hover {
+    background-color: darken($color-link, 10%);
+    border-color: darken($color-link, 12%);
+  }
+}
+
+.btn--primary-ghost {
+  background-color: transparent;
+  border-color: $color-link;
+  color: $color-link;
+
+  &:focus,
+  &:hover {
+    background-color: $color-link;
+    color: $color-white;
+  }
+}
+
+.btn--block {
+  display: block;
+  width: 100%;
+}

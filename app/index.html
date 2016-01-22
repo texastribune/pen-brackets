@@ -1,0 +1,432 @@
+<!doctype html>{% import 'macros/shares.html' as shares %}
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:site" content="@texastribune">
+  <meta name="twitter:creator" content="@texastribune">
+  <meta property="og:url" content="{{ data.PATH_FULL }}">
+  <meta property="og:title" content="The 2016 Texas Primaries">
+  <meta property="og:type" content="article">
+  <meta property="article:publisher" content="https://www.facebook.com/texastribune">
+  <meta property="article:published_time" content="2015-12-17">
+  <meta property="og:description" content="The ballots for 2016’s Republican and Democratic primary elections are set and in many cases, the primary races are expected to be more competitive than the general election races in November. This is an unofficial list of who filed to run in the election. The parties are finishing up their work and getting official versions to the state; we will update and finish our list as they finish theirs.">
+  <meta property="og:site_name" content="The Texas Tribune">
+  <meta property="og:image" content="{{ data.PATH_FULL }}assets/images/primary-fb.jpg">
+  <meta property="fb:app_id" content="154122474650943">
+  <title>The 2016 Candidate List | The Texas Tribune</title>
+  <link rel="stylesheet" href="{{ data.PATH_PREFIX }}styles/main.css">
+  <script>
+    var googletag = googletag || {};
+    googletag.cmd = googletag.cmd || [];
+  </script>
+</head>
+<body>
+
+<header class="masthead masthead--center" role="banner">
+  <div class="container">
+    <a href="http://www.texastribune.org/">
+      <img class="tribune-logo" src="{{ data.PATH_PREFIX }}assets/images/tribune-white.svg" alt="The Texas Tribune">
+    </a>
+  </div>
+</header>
+
+<div class="menu-container">
+  <div class="menu-scroll">
+    <nav id="menu-nav" class="menu-nav">
+      <ul>
+        <li class="menu-nav__item"><a class="menu-nav__link" href="http://www.texastribune.org/">Front Page</a></li>
+        <li class="menu-nav__item"><a class="menu-nav__link" href="http://www.texastribune.org/2016/">2016 Coverage</a></li>
+        <li class="menu-nav__item"><a class="menu-nav__link" href="http://www.texastribune.org/directory/">Directory</a></li>
+        <li class="menu-nav__item"><a class="menu-nav__link" href="http://www.texastribune.org/events/">Events</a></li>
+        <li class="menu-nav__item"><a class="menu-nav__link" href="http://www.texastribune.org/subscribe/">Newsletters</a></li>
+      </ul>
+    </nav>
+  </div>
+  <button id="menu-button" class="menu-button"><svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="12" height="12" viewBox="0 0 16 16"><path class="menu-button-icon" d="M1 3h14v3h-14zM1 7h14v3h-14zM1 11h14v3h-14z"></path></svg> Menu</button>
+</div>
+
+<main role="main">
+  <div class="container">
+    <header>
+      <h1 class="headline">The 2016 Texas Primaries</h1>
+      <p class="credit">By <a class="credit__author" href="http://www.texastribune.org/about/staff/madlin-mekelburg/">Madlin Mekelburg</a> and <a class="credit__author" href="http://www.texastribune.org/about/staff/ryan-murphy/">Ryan Murphy</a> | Last Updated: Dec. 15, 2015</p>
+    </header>
+    <div class="intro row">
+    <div class="prose">
+      <ul class="share-cells">
+        <li class="share-cells__cell">
+          <a class="share-cells__link" href="{{ shares.twitter(data.PATH_FULL, 'The ballots for 2016’s Republican and Democratic primary elections are set. Check them out here.', 'txlege') }}"><img class="share-cells__icon" src="{{ data.PATH_PREFIX }}assets/images/twitter.svg" alt="Twitter"> Tweet</a>
+        </li>
+        <li class="share-cells__cell">
+          <a class="share-cells__link" href="{{ shares.facebook(data.PATH_FULL, data.PATH_FULL) }}"><img class="share-cells__icon" src="{{ data.PATH_PREFIX }}assets/images/facebook.svg" alt="Facebook"> Recommend</a>
+        </li>
+        <li class="share-cells__cell">
+          <a class="share-cells__link" href="{{ shares.email('The 2016 Texas Primaries | The Texas Tribune', data.PATH_FULL) }}"><img class="share-cells__icon" src="{{ data.PATH_PREFIX }}assets/images/envelope.svg" alt="Send"> Email</a>
+        </li>
+      </ul>
+
+      <p>The ballots for 2016’s Republican and Democratic primary elections are set and in many cases, the primary races are expected to be more competitive than the general election races in November. This is an unofficial list of who filed to run in the election. The parties are finishing up their work and getting official versions to the state; we will update and finish our list as they finish theirs. Incumbents' names are in parentheses.</p>
+    </div>
+
+    <div class="story-grid">
+      <a class="story-grid__header" href="http://www.texastribune.org/politics/elections/">Latest Election coverage</a>
+      <div class="list" id="js-story-box"></div>
+    </div>
+  </div>
+
+  <aside class="ad-slot">
+    <div id="ad-banner-leader"></div>
+  </aside>
+
+  </div>
+
+  <div class="container">
+    <section class="jumper">
+      <p class="jumper__header" id="top">Select to view: </p>
+      <button class="btn btn--primary-ghost js-jumper" data-jumper="president">U.S. President</button>
+      <button class="btn btn--primary-ghost js-jumper" data-jumper="congress">U.S. Congress</button>
+      <button class="btn btn--primary-ghost js-jumper" data-jumper="railroad">Texas Railroad Commission</button>
+      <button class="btn btn--primary-ghost js-jumper" data-jumper="supreme">Texas Supreme Court</button>
+      <button class="btn btn--primary-ghost js-jumper" data-jumper="appeals">Court of Criminal Appeals</button>
+      <button class="btn btn--primary-ghost js-jumper" data-jumper="sboe">State Board of Education</button>
+      <button class="btn btn--primary-ghost js-jumper" data-jumper="senate">Texas Senate</button>
+      <button class="btn btn--primary-ghost js-jumper" data-jumper="house">Texas House</button>
+    </section>
+  </div>
+
+  <a href="#top" class="btn btn--primary top-button" id="jump-to-top">Back to top</a>
+
+  <div class="container" id="content">
+  <section class="section">
+  <h2 class="section-headline" id="president">U.S. President</h2>
+  <div class="row">
+  {% for title, race in data.president %}
+  <section class="race">
+    <header>
+      <h3 class="race__name"><span class="race__title">{{ title }}</span> ({{ race.incumbent.Candidate }}, <span class="{% if race.incumbent.Party == 'R' %}republican{% else %}democrat{% endif %}">{{ race.incumbent.Party }}</span>)</h3>
+    </header>
+    <div class="row race__candidates">
+      <div class="col-6">
+        <h4 class="race__party race__party--republican">Republicans</h4>
+        <ul class="list">
+          {% for cand in race.data.R %}
+            {% if not cand['Not Running'] %}
+            <li class="list__item">{{ cand.Candidate }}{% if cand.Incumbent %} <br><span class="race__incumbent-pill">Incumbent</span>{% endif %}</li>
+            {% endif %}
+          {% endfor %}
+        </ul>
+      </div>
+
+      <div class="col-6">
+        <h4 class="race__party race__party--democrat">Democrats</h4>
+        <ul class="list">
+          {% for cand in race.data.D %}
+            {% if not cand['Not Running'] %}
+            <li class="list__item">{{ cand.Candidate }}{% if cand.Incumbent %} <br><span class="race__incumbent-pill">Incumbent</span>{% endif %}</li>
+            {% endif %}
+          {% endfor %}
+        </ul>
+      </div>
+    </div>
+  </section>
+  {% endfor %}
+  </div>
+  </section>
+
+  <section class="section">
+  <h2 class="section-headline" id="congress">U.S. Congress</h2>
+  <div class="row">
+  {% for title, race in data.us_house %}
+  <section class="race">
+    <header>
+      <h3 class="race__name"><span class="race__title">District {{ title }}</span> ({{ race.incumbent.Candidate }}, <span class="{% if race.incumbent.Party == 'R' %}republican{% else %}democrat{% endif %}">{{ race.incumbent.Party }}</span>)</h3>
+    </header>
+
+    <div class="row race__candidates">
+      <div class="col-6">
+        <h4 class="race__party race__party--republican">Republicans</h4>
+        <ul class="list">
+          {% for cand in race.data.R %}
+            {% if not cand['Not Running'] %}
+            <li class="list__item">{{ cand.Candidate }}{% if cand.Incumbent %} <br><span class="race__incumbent-pill">Incumbent</span>{% endif %}</li>
+            {% endif %}
+          {% endfor %}
+        </ul>
+      </div>
+
+      <div class="col-6">
+        <h4 class="race__party race__party--democrat">Democrats</h4>
+        <ul class="list">
+          {% for cand in race.data.D %}
+            {% if not cand['Not Running'] %}
+            <li class="list__item">{{ cand.Candidate }}{% if cand.Incumbent %} <br><span class="race__incumbent-pill">Incumbent</span>{% endif %}</li>
+            {% endif %}
+          {% endfor %}
+        </ul>
+      </div>
+    </div>
+  </section>
+  {% endfor %}
+  </div>
+  </section>
+
+  <section class="section">
+  <h2 class="section-headline" id="railroad">Texas Railroad Commission</h2>
+  <div class="row">
+  {% for title, race in data.railroad_commissioner %}
+  <section class="race">
+    <header>
+      <h3 class="race__name"><span class="race__title">{{ title }}</span> ({{ race.incumbent.Candidate }}, <span class="{% if race.incumbent.Party == 'R' %}republican{% else %}democrat{% endif %}">{{ race.incumbent.Party }}</span>)</h3>
+    </header>
+
+    <div class="row race__candidates">
+      <div class="col-6">
+        <h4 class="race__party race__party--republican">Republicans</h4>
+        <ul class="list">
+          {% for cand in race.data.R %}
+            {% if not cand['Not Running'] %}
+            <li class="list__item">{{ cand.Candidate }}{% if cand.Incumbent %} <br><span class="race__incumbent-pill">Incumbent</span>{% endif %}</li>
+            {% endif %}
+          {% endfor %}
+        </ul>
+      </div>
+
+      <div class="col-6">
+        <h4 class="race__party race__party--democrat">Democrats</h4>
+        <ul class="list">
+          {% for cand in race.data.D %}
+            {% if not cand['Not Running'] %}
+            <li class="list__item">{{ cand.Candidate }}{% if cand.Incumbent %} <br><span class="race__incumbent-pill">Incumbent</span>{% endif %}</li>
+            {% endif %}
+          {% endfor %}
+        </ul>
+      </div>
+    </div>
+  </section>
+  {% endfor %}
+  </div>
+  </section>
+
+  <section class="section">
+  <h2 class="section-headline" id="supreme">Texas Supreme Court</h2>
+  <div class="row">
+  {% for title, race in data.supreme_court %}
+  <section class="race">
+    <header>
+      <h3 class="race__name"><span class="race__title">Justice, {{ title }}</span> ({{ race.incumbent.Candidate }}, <span class="{% if race.incumbent.Party == 'R' %}republican{% else %}democrat{% endif %}">{{ race.incumbent.Party }}</span>)</h3>
+    </header>
+
+    <div class="row race__candidates">
+      <div class="col-6">
+        <h4 class="race__party race__party--republican">Republicans</h4>
+        <ul class="list">
+          {% for cand in race.data.R %}
+            {% if not cand['Not Running'] %}
+            <li class="list__item">{{ cand.Candidate }}{% if cand.Incumbent %} <br><span class="race__incumbent-pill">Incumbent</span>{% endif %}</li>
+            {% endif %}
+          {% endfor %}
+        </ul>
+      </div>
+
+      <div class="col-6">
+        <h4 class="race__party race__party--democrat">Democrats</h4>
+        <ul class="list">
+          {% for cand in race.data.D %}
+            {% if not cand['Not Running'] %}
+            <li class="list__item">{{ cand.Candidate }}{% if cand.Incumbent %} <br><span class="race__incumbent-pill">Incumbent</span>{% endif %}</li>
+            {% endif %}
+          {% endfor %}
+        </ul>
+      </div>
+    </div>
+  </section>
+  {% endfor %}
+  </div>
+  </section>
+
+  <section class="section">
+  <h2 class="section-headline" id="appeals">Court of Criminal Appeals</h2>
+  <div class="row">
+  {% for title, race in data.criminal_appeals %}
+  <section class="race">
+    <header>
+      <h3 class="race__name"><span class="race__title">Judge, {{ title }}</span> ({{ race.incumbent.Candidate }}, <span class="{% if race.incumbent.Party == 'R' %}republican{% else %}democrat{% endif %}">{{ race.incumbent.Party }}</span>)</h3>
+    </header>
+
+    <div class="row race__candidates">
+      <div class="col-6">
+        <h4 class="race__party race__party--republican">Republicans</h4>
+        <ul class="list">
+          {% for cand in race.data.R %}
+            {% if not cand['Not Running'] %}
+            <li class="list__item">{{ cand.Candidate }}{% if cand.Incumbent %} <br><span class="race__incumbent-pill">Incumbent</span>{% endif %}</li>
+            {% endif %}
+          {% endfor %}
+        </ul>
+      </div>
+
+      <div class="col-6">
+        <h4 class="race__party race__party--democrat">Democrats</h4>
+        <ul class="list">
+          {% for cand in race.data.D %}
+            {% if not cand['Not Running'] %}
+            <li class="list__item">{{ cand.Candidate }}{% if cand.Incumbent %} <br><span class="race__incumbent-pill">Incumbent</span>{% endif %}</li>
+            {% endif %}
+          {% endfor %}
+        </ul>
+      </div>
+    </div>
+  </section>
+  {% endfor %}
+  </div>
+  </section>
+
+  <section class="section">
+  <h2 class="section-headline" id="sboe">State Board of Education</h2>
+  <div class="row">
+  {% for title, race in data.sboe %}
+  <section class="race">
+    <header>
+      <h3 class="race__name"><span class="race__title">District {{ title }}</span> ({{ race.incumbent.Candidate }}, <span class="{% if race.incumbent.Party == 'R' %}republican{% else %}democrat{% endif %}">{{ race.incumbent.Party }}</span>)</h3>
+    </header>
+
+    <div class="row race__candidates">
+      <div class="col-6">
+        <h4 class="race__party race__party--republican">Republicans</h4>
+        <ul class="list">
+          {% for cand in race.data.R %}
+            {% if not cand['Not Running'] %}
+            <li class="list__item">{{ cand.Candidate }}{% if cand.Incumbent %} <br><span class="race__incumbent-pill">Incumbent</span>{% endif %}</li>
+            {% endif %}
+          {% endfor %}
+        </ul>
+      </div>
+
+      <div class="col-6">
+        <h4 class="race__party race__party--democrat">Democrats</h4>
+        <ul class="list">
+          {% for cand in race.data.D %}
+            {% if not cand['Not Running'] %}
+            <li class="list__item">{{ cand.Candidate }}{% if cand.Incumbent %} <br><span class="race__incumbent-pill">Incumbent</span>{% endif %}</li>
+            {% endif %}
+          {% endfor %}
+        </ul>
+      </div>
+    </div>
+  </section>
+  {% endfor %}
+  </div>
+  </section>
+
+  <section class="section">
+  <h2 class="section-headline" id="senate">Texas Senate</h2>
+  <div class="row">
+  {% for title, race in data.state_senate %}
+  <section class="race">
+    <header>
+      <h3 class="race__name"><span class="race__title">District {{ title }}</span> ({{ race.incumbent.Candidate }}, <span class="{% if race.incumbent.Party == 'R' %}republican{% else %}democrat{% endif %}">{{ race.incumbent.Party }}</span>)</h3>
+    </header>
+
+    <div class="row race__candidates">
+      <div class="col-6">
+        <h4 class="race__party race__party--republican">Republicans</h4>
+        <ul class="list">
+          {% for cand in race.data.R %}
+            {% if not cand['Not Running'] %}
+            <li class="list__item">{{ cand.Candidate }}{% if cand.Incumbent %} <br><span class="race__incumbent-pill">Incumbent</span>{% endif %}</li>
+            {% endif %}
+          {% endfor %}
+        </ul>
+      </div>
+
+      <div class="col-6">
+        <h4 class="race__party race__party--democrat">Democrats</h4>
+        <ul class="list">
+          {% for cand in race.data.D %}
+            {% if not cand['Not Running'] %}
+            <li class="list__item">{{ cand.Candidate }}{% if cand.Incumbent %} <br><span class="race__incumbent-pill">Incumbent</span>{% endif %}</li>
+            {% endif %}
+          {% endfor %}
+        </ul>
+      </div>
+    </div>
+  </section>
+  {% endfor %}
+  </div>
+  </section>
+
+  <section class="section">
+  <h2 class="section-headline" id="house">Texas House</h2>
+  <div class="row">
+  {% for title, race in data.state_house %}
+  <section class="race">
+    <header>
+      <h3 class="race__name"><span class="race__title">District {{ title }}</span> ({{ race.incumbent.Candidate }}, <span class="{% if race.incumbent.Party == 'R' %}republican{% else %}democrat{% endif %}">{{ race.incumbent.Party }}</span>)</h3>
+    </header>
+
+    <div class="row race__candidates">
+      <div class="col-6">
+        <h4 class="race__party race__party--republican">Republicans</h4>
+        <ul class="list">
+          {% for cand in race.data.R %}
+            {% if not cand['Not Running'] %}
+            <li class="list__item">{{ cand.Candidate }}{% if cand.Incumbent %} <br><span class="race__incumbent-pill">Incumbent</span>{% endif %}</li>
+            {% endif %}
+          {% endfor %}
+        </ul>
+      </div>
+
+      <div class="col-6">
+        <h4 class="race__party race__party--democrat">Democrats</h4>
+        <ul class="list">
+          {% for cand in race.data.D %}
+            {% if not cand['Not Running'] %}
+            <li class="list__item">{{ cand.Candidate }}{% if cand.Incumbent %} <br><span class="race__incumbent-pill">Incumbent</span>{% endif %}</li>
+            {% endif %}
+          {% endfor %}
+        </ul>
+      </div>
+    </div>
+  </section>
+  {% endfor %}
+  </div>
+  </section>
+</div>
+
+<aside class="ad-slot">
+  <div id="ad-banner-footer"></div>
+</aside>
+
+</main>
+
+<footer class="footer" role="contentinfo">
+  <div class="container">
+    <div class="footer__copyright">&copy; 2015 <a class="footer__link" href="http://www.texastribune.org/">The Texas Tribune</a></div>
+    <nav class="footer__nav">
+      <ul>
+        <li class="footer__nav-item"><a class="footer__link" href="http://www.texastribune.org/about/">About Us</a></li>
+        <li class="footer__nav-item"><a class="footer__link" href="http://www.texastribune.org/contact/">Contact Us</a></li>
+        <li class="footer__nav-item"><a class="footer__link" href="http://www.texastribune.org/support-us/donors-and-members/">Who Funds Us?</a></li>
+        <li class="footer__nav-item"><a class="footer__link" href="http://www.texastribune.org/terms-of-service/">Terms of Service</a></li>
+        <li class="footer__nav-item"><a class="footer__link" href="http://www.texastribune.org/ethics/">Code of Ethics</a></li>
+        <li class="footer__nav-item"><a class="footer__link" href="http://www.texastribune.org/privacy/">Privacy Policy</a></li>
+        <li class="footer__nav-item"><a class="footer__link--donate" href="https://www.texastribune.org/join/">Donate</a></li>
+      </ul>
+    </nav>
+  </div>
+</footer>
+<script src="{{ data.PATH_PREFIX }}scripts/commons.js"></script>
+<script src="{{ data.PATH_PREFIX }}scripts/main.js"></script>
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+  ga('create', 'UA-9827490-1', 'auto');
+  ga('send', 'pageview');
+</script>
+</body>
+</html>

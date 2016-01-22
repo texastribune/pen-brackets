@@ -1,0 +1,51 @@
+.headline {
+  @include font-size(30);
+  font-family: $font-serif;
+  margin-bottom: $gutter-half;
+
+  @include mq($from: race-break) {
+    @include font-size(42);
+  }
+}
+
+.credit {
+  @include font-size(12);
+  color: $color-secondary;
+  line-height: 1.5;
+  margin-bottom: $gutter;
+}
+
+.credit__author {
+  font-weight: 700;
+}
+
+.prose {
+  @include create-column(12);
+  margin-bottom: $gutter;
+
+  > p {
+    @include font-size(16);
+    font-family: $font-serif;
+    line-height: 1.5;
+    margin-bottom: $gutter-half;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+
+  @include mq($from: race-break) {
+    @include create-column(7);
+  }
+}
+
+.intro {
+  margin-bottom: $gutter-double;
+}
+
+.section-headline {
+  @include font-size(30);
+  border-bottom: $border-width solid $color-gray;
+  margin-bottom: $gutter;
+  padding-bottom: $gutter-half;
+}

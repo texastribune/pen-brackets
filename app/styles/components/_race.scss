@@ -1,0 +1,64 @@
+.race {
+  @include create-column(12);
+  margin-bottom: $gutter-double;
+
+  @include mq($from: race-break) {
+    @include create-column(6);
+
+    &:nth-child(2n+1) {
+      clear: left;
+    }
+  }
+}
+
+.race__name {
+  @include font-size(20);
+  font-weight: 300;
+  margin-bottom: $gutter;
+}
+
+.race__title {
+  font-weight: 400;
+}
+
+.race__current-holder {
+  @include font-size(20);
+  margin-bottom: $gutter-half;
+}
+
+.race__party {
+  border-bottom: $border-width solid transparent;
+  padding-bottom: $gutter-quarter;
+  text-align: center;
+}
+
+.republican {
+  color: $color-republican;
+}
+
+.democrat {
+  color: $color-democrat;
+}
+
+.race__party--republican {
+  border-color: $color-republican;
+  color: $color-republican;
+}
+
+.race__party--democrat {
+  border-color: $color-democrat;
+  color: $color-democrat;
+}
+
+.race__incumbent-pill {
+  @include font-size(14);
+  color: $color-emily-gray;
+  display: inline-block;
+  font-size: 70%;
+  font-style: italic;
+  font-weight: 700;
+  line-height: 1;
+  text-align: center;
+  vertical-align: baseline;
+  white-space: nowrap;
+}

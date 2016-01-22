@@ -1,0 +1,11 @@
+.top-button {
+  bottom: $gutter-half;
+  display: none;
+  position: fixed;
+  right: $gutter;
+  z-index: 1000;
+}
+
+.show {
+  display: inline;
+}
